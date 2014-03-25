@@ -1,0 +1,22 @@
+// num impares.cpp : Defines the entry point for the console application.
+// autor:paola michel cuellar
+// fecha:25/03/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+void main ()
+{
+int num1,num2,res;
+cin>>num1;
+cin>>num2;
+if ((num1%2!=0)&&(num2%2!=0))
+    res=num1+num2;
+else 
+    res=num1*num2;
+cout<<res;
+getch ();
+}
