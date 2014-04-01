@@ -1,0 +1,21 @@
+// lasuma.cpp : Defines the entry point for the console application.
+// autor : Paola alexi Michel cuellar
+// fecha : 01/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int main ()
+{
+	int suma,i,N;
+	cout<< "ingresar el valor de N: ";
+	cin>>N;
+	suma=0;
+	for (i=1;i<=N;i++)
+		suma=suma+i;
+	cout<<"la suma de los "<<N<<"primeros numeros naturales es"<< suma;
+	getch();
+	return 0; 
+}
