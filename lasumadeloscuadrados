@@ -1,0 +1,23 @@
+// sumadeloscuadrados.cpp : Defines the entry point for the console application.
+// autor : Paola alexi Michel cuellar
+// fecha : 01/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+int main()
+{
+	int suma,N;
+	float i;
+	cout<< "ingresar el valor de N: ";
+	cin>>N;
+	suma=0;
+	for (i=1;i<=N;i++)
+		suma=suma+pow(i,2);
+	cout<<"la suma de los cuadrados"<<N<<"primeros numeros enteros es"<< suma;
+	getch();
+	return 0; 
+}
