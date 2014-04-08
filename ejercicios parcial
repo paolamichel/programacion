@@ -1,0 +1,61 @@
+// Autor : paola michel cuellar
+// fecha : 08/04/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+{
+	float Parcial1,Parcial2,Parcial3,practico,examenfinal,notafinal;
+	do
+    {
+	   cout<<"ingrese Parcial1: ";
+	   cin>>Parcial1;
+    }
+    while ((Parcial1>100 || Parcial1<0)&& Parcial1!=-99);
+	
+	do
+	{
+		cout<<"ingrese Parcial2: ";
+		cin>>Parcial2;
+	}
+	while (Parcial2>100 || Parcial2<0);
+
+	do
+	{
+		cout<<"ingrese Parcial3: ";
+		cin>>Parcial3;
+	}
+	while (Parcial3>100 || Parcial3<0);
+
+	do
+	{
+		cout<<"ingrese practico: ";
+		cin>>practico;
+	}
+	while (practico>100 || practico<0);
+
+	do
+	{
+		cout<<"ingrese examenfinal: ";
+		cin>>examenfinal;
+	}
+	while (examenfinal>100 || examenfinal<0);
+    
+	notafinal =((Parcial1+Parcial2+Parcial3)/3*0.4)+(practico*0.2+examenfinal*0.4);
+	cout<<"notafinal: "<<notafinal;
+
+	do 
+	{
+		cout<<"ingrese Parcial1: ";
+		cin>>Parcial1;
+	}
+	while ((Parcial1>100 || Parcial1<0)&& Parcial1!=-99);
+
+
+getch();
+
+}
+    
