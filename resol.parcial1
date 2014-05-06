@@ -1,0 +1,32 @@
+// tresdgjgjp.cpp : Defines the entry point for the console application.
+// autor : paola michel cuellar
+// fecha : 06/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{
+float n,x,i,s,p,sig;
+
+cout<<"ingrese el valor de n: ";
+cin>>n;
+cout<<"ingrese el valor de x: ";
+cin>>x;
+
+sig=1;
+s=5;
+p=1;
+for (i=1;i<=n ; i++)
+{
+	p=p * (i+1);
+	s=s + sig * pow(x,i)/p;
+	sig= sig * -1;
+}
+cout<<"la suma sera: "<<s;
+   getch();
+}
+
