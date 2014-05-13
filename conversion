@@ -1,0 +1,38 @@
+// ghj.cpp : Defines the entry point for the console application.
+// autor :paola michel cuellar
+// fecha . 13/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+int conversion(int N1,int bas);
+int main ()
+{
+	int N1,conv;
+	cout<<"ingrese el numero: ";
+	cin>>N1;
+	conv=conversion(N1,2);
+	cout<<"el numero es : ";
+	cout<<conv;
+	getch();
+	return 0;
+}
+int conversion (int N1,int bas) 
+{
+	int D,conv;
+	float i;
+	conv=0;
+	i=0;
+	while (N1>0)
+	{
+		D=N1%10;
+		  N1 = N1 / 10;
+	   conv=conv + D * pow(bas,i);
+	   i = i+1;
+	}
+	   return (conv);
+}
+
