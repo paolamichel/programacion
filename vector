@@ -1,0 +1,53 @@
+// pasd.cpp : Defines the entry point for the console application.
+// autor : paola alexi michel cuellar
+// fecha : 27/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void leer (int vector[],int tam);
+void escribir (int vector[],int tam);
+void ordenar (int vector[],int tam);
+void main()		
+{
+	{
+int v[100],tam;
+do{
+	cout<<"ingresar el numero de elementos del vector: ";
+	cin>>tam;
+  } while ((tam>100)||(tam<=0))
+}
+leer (v,tam);
+escribir (v,tam);
+ordenar (v,tam);
+getch();
+}
+  
+	{ for (int=0;i<tam;i++)
+	  if (k==v[i])
+	  cout<<"posicion"<<i;
+	}
+void buscar (int v[];int k)
+
+void leer(int vector[],int tam)
+{
+	for (int i=0;i<tam;i++)
+	cin>>vector[i];
+}
+void escribir (int vector[],int tam)
+{
+	for (int i=0;i<tam;i++)
+		cout<<vector[i];
+}
+void ordenar (int vector[],int tam)
+{ int aux 
+    for(int i=0;i<tam-1;i++)
+		for(int k=i;k<tam;k++)
+			if(vector[i]>vector[k]
+			{ aux=vector[i];
+			  vector[i]=vector[k];
+			  vector[k]=aux;
+			}
+}
