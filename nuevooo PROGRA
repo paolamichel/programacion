@@ -1,0 +1,15 @@
+// prog02.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main(void)
+{
+	int A, B, H;
+	scanf("%d%d", &B,&H);
+	A=B*H;
+	printf("\nArea es = %d\n", A);
+	return 0;
+}
+
