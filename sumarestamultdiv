@@ -1,0 +1,25 @@
+// programa1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main(void)
+{
+float s,r,m,d,a,b;
+printf("introducir el 1er numero: \n");
+scanf("%f",&a);
+printf("introducir el 2do numero: \n");
+scanf("%f",&b);
+s=(a+b);
+printf("la suma es: %f\n" , s);
+r=(a-b);
+printf("la resta es: %f\n" ,r);
+m=(a*b);
+printf("la multiplicacion es: %f\n" ,m);
+d=(a/b);
+printf("la division es : %f\n" ,d);
+
+return 0;
+}
+
