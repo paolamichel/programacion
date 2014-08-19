@@ -1,0 +1,27 @@
+/ sumaa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h" 
+#include <conio.h>
+
+int main(void)
+{
+	float cm,lb,M,kg;
+	char nom;
+	
+	printf("introducir el nombre del estudiante : \n");
+	scanf("%s",&nom);
+	printf("introducir su estatura en centimetros : \n");
+	scanf("%d",&cm);
+    printf("introducir el peso en libras : \n");
+	scanf("%d",&lb);
+	M=(cm/100);
+	kg=(lb/2.2);
+	printf(" %s\n el nombre del estudiante es: ",nom);
+	printf("la estatura en metros es : %f\n",M);
+	printf("el peso en kilogramos es : %f\n",kg);
+
+
+	return 0;
+}
