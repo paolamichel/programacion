@@ -1,0 +1,21 @@
+// programita.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main (void)
+{
+float n1,n2,n3,prom;
+printf("introducir la nota n1: \n");
+scanf("%f",&n1);
+printf("introducir la nota n2: \n");
+scanf("%f",&n2);
+printf("introducir la nota n3: \n");
+scanf("%f",&n3);
+prom=(n1+n2+n3)/3;
+printf("\n el promedio es: %f\n",prom);
+
+	
+return 0;
+}
