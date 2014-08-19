@@ -1,0 +1,22 @@
+// sumaa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main(void)
+{
+	int clave,is;
+	int s1,s2,s3,s4,s5,s6;
+	float p;
+	printf("introducir la clave : \n");
+	scanf("%d",&clave);
+	printf("introducir los seis primeros sueldos del año : \n");
+	scanf("%d%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5,&s6);
+	is=(s1+s2+s3+s4+s5+s6);
+	p=(s1+s2+s3+s4+s5+s6)/6;
+	printf("la clave es : %d\n",clave);
+	printf("el promedio mesual es : %f\n",p); 
+
+	return 0;
+}
