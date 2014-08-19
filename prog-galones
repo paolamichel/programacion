@@ -1,0 +1,19 @@
+// sumaa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h" 
+
+int main(void)
+{
+	float pago,N;
+
+	printf("ingresar la cantidad de galones comprados : \n");
+	scanf("%f",&N);
+	pago=(N*250*2.45);
+	printf("el pago es : %f\n",pago);
+	
+
+
+	return 0;
+}
