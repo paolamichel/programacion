@@ -1,0 +1,17 @@
+// sumaa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main(void)
+{
+	int a,b,s;
+	printf("introducir a : \n");
+	scanf("%d",&a);
+	printf("introducir b : \n");
+	scanf("%d",&b);
+	s=(a+b);
+	printf("la suma es : %d\n",s); 
+	return 0;
+}
