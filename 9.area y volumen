@@ -1,0 +1,21 @@
+// programita.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main (void)
+{
+float r,a,area,vol;
+printf("introducir el radio: \n");
+scanf("%f",&r);
+printf("introducir la altura: \n");
+scanf("%f",&a);
+area=(2*3.14*r*a);
+vol=(3.14*r*r*a);
+printf("\n el area es: %f\n",area);
+printf("\n el volumen es: %f\n",vol);
+
+	
+return 0;
+}
