@@ -1,0 +1,18 @@
+// programita.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main (void)
+{
+int n,cua,cubo;
+printf("introducir el numero n : \n");
+scanf("%d",&n);
+cua=n*n;
+cubo=n*n*n;
+printf("el calculo de la potencia al cuadrado es : %d\n ",cua);
+printf("el calculo de la potencia al cubo es : %d\n ",cubo);
+	
+return 0;
+}
