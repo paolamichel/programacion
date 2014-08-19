@@ -1,0 +1,22 @@
+// programita.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main (void)
+{
+float N,ht,ph,s;
+printf("nombre del empleado: \n");
+scanf("%f",&N);
+printf("introduzca las horas de trabajo: \n");
+scanf("%f",&ht);
+printf("introduzca el precio que se le paga por hora: \n");
+scanf("%f",&ph);
+s=(ht*ph);
+printf("\n el nombre del empleado es: %f\n",N);
+printf("\n su salario es: %f\n",s);
+
+	
+return 0;
+}
