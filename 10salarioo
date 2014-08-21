@@ -6,17 +6,16 @@
 
 int main (void)
 {
-float N,ht,ph,s;
+float ht,ph,s;
+char N[20];
 printf("nombre del empleado: \n");
-scanf("%f",&N);
+scanf("%s",&N);
 printf("introduzca las horas de trabajo: \n");
 scanf("%f",&ht);
 printf("introduzca el precio que se le paga por hora: \n");
 scanf("%f",&ph);
 s=(ht*ph);
-printf("\n el nombre del empleado es: %f\n",N);
+printf("\n el nombre del empleado es: %s\n",N);
 printf("\n su salario es: %f\n",s);
-
-	
 return 0;
 }
