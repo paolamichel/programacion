@@ -6,20 +6,17 @@
 
 int main(void)
 {
-	float D,d,area,per;
-    printf("ingresar D: \n");
-	scanf("%f",&D);
-    printf("ingresar d: \n");
-	scanf("%f",&d);
-    printf("ingresar l: \n");
-	scanf("%f",&l);
-	area=(D*d)/2;
-	per=4*l;
-	printf("el area es : %f\n",area);
-    printf("el perimetro  es : %f\n",per);
-
-
-
-	return 0;
+float D,d,area,per,l;
+printf("ingresar D: \n");
+scanf("%f",&D);
+printf("ingresar d: \n");
+scanf("%f",&d);
+printf("ingresar l: \n");
+scanf("%f",&l);
+area=(D*d)/2;
+per=4*l;
+printf("el area es : %f\n",area);
+printf("el perimetro es : %f\n",per);
+return 0;
 }
 
