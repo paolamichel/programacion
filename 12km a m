@@ -1,0 +1,18 @@
+// proghj.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+
+int main(void)
+{
+float M,km,cm;
+
+printf("introducir la cantidad en metros : \n");
+scanf("%f",&M);
+km=(M/1000);
+cm=(M*100);
+printf("\nen kilometros es = %f\n", km);
+printf("\nen centimetros  es = %f\n", cm);
+return 0;
+}
