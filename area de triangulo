@@ -1,0 +1,14 @@
+// proghj.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+
+int main(void)
+{
+float area,h,b;
+scanf("%f%f", &h,&b);
+area=(b*h)/2;
+printf("\nel area de un triangulo es = %f\n", area);
+return 0;
+}
