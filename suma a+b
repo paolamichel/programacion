@@ -1,0 +1,14 @@
+// area.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main(void)
+{
+int s,a,b;
+scanf("%d%d", &a,&b);
+s=a+b;
+printf("\nla suma es = %d\n", s);
+return 0;
+}
