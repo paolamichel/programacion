@@ -1,0 +1,26 @@
+// formula cuadratica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+
+
+int main()
+{
+float p1,p2,ef,nf;
+printf("\n\n introducir la nota del primer parcial : ");
+scanf("%f",&p1);
+printf("\n\n introducir la nota del segundo parcial : ");
+scanf("%f",&p2);
+printf("\n\n introducir la nota del examen final : ");
+scanf("%f",&ef);
+p1= p1*0.25;
+p2= p2*0.25;
+ef= ef*0.50;
+nf=(p1+p2+ef);
+printf("la nota final es:%f\n",nf);
+return 0;
+
+}
+
