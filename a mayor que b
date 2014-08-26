@@ -1,0 +1,26 @@
+// formula cuadratica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+
+
+int main()
+{
+int a,b;
+printf("\n introducir a : ");
+scanf("%d",&a);
+printf("\n introducir b : ");
+scanf("%d",&b);
+if(a>b)
+{
+	printf("\n a");
+}
+else
+{
+	printf("\n b");
+}
+return 0;
+
+}
