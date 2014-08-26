@@ -1,0 +1,45 @@
+// formula cuadratica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "math.h"
+
+
+
+int main()
+{
+float a,b,c,x1,x2,xx,d;
+printf("\n introducir a : ");
+scanf("%f",&a);
+printf("\n introducir b : ");
+scanf("%f",&b);
+printf("\n introducir c : ");
+scanf("%f",&c);
+d=(b*b-4*a*c)
+if(d>0)
+{
+	if(a>0)
+	{
+		x1=(-b+sqrt*(d))/(2*a);
+		x2=(-b-sqrt*(d))/(2*a);
+		printf("\n x1 es : %f",x1);
+		printf("\n x2 es : %f",x2);
+
+	}
+	else
+	{
+		xx=(-c/b);
+		printf("/n el resultado es xx :%f" ,xx);
+	}
+
+else
+{
+	printf("\n x es una raiz imaginaria: %f");
+}
+}
+return 0;
+
+}
+
