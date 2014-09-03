@@ -1,0 +1,23 @@
+// numeroposi nega.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	float a,b;
+	printf("ingrese el numero: \n");
+	scanf("%f",&a);
+	if(a>=51)
+	{
+		b=(a*10)/100;
+		printf("\n la nota con el 10 es : %f",b);
+	}
+	else
+	{
+		printf("\n la nota es : %f",a);
+	}
+	
+	return 0;
+}
