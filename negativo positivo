@@ -1,0 +1,23 @@
+// numeroposi nega.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	float a;
+	printf("ingrese el numero: \n");
+	scanf("%f",&a);
+	if(a>0)
+	{
+		printf("el numero es positivo: \n");
+	}
+	else
+	{
+		printf("el numero es negativo: \n");
+	}
+	
+	return 0;
+}
+
