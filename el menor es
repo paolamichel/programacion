@@ -1,0 +1,25 @@
+
+// numeroposi nega.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int a,b;
+	printf("ingrese el numero: \n");
+	scanf("%i",&a);
+    printf("ingrese el numero: \n");
+	scanf("%i",&b);
+	if(a<b)
+	{
+		printf("\n el numero menor es : %i",a);
+	}
+	else
+	{
+		printf("\n el numero menor es : %i",b);
+	}
+	
+	return 0;
+}
