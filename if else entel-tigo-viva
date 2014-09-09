@@ -1,0 +1,39 @@
+// valorabsoluto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int main()
+{
+	float m,r ;
+	int op;
+	printf("empresa de telefonia :\n");
+    printf("1.tigo \n");
+    printf("2.viva \n");
+    printf("3.entel \n");
+	printf("elija una opcion : \n");
+    scanf("%i",&op);
+	printf("introducir cuantos minutos habla:\n");
+	scanf("%f",&m);
+    if (op=1)
+	{
+		r=m*0.96;
+		printf("el total a pagar es : \n %f",r);
+	}
+	else 
+	{
+	    if(op=2)
+			{
+				r=m*1;
+        printf("el total a pagar es : \n %f",r);
+		    }
+		else 
+			{
+				r=m*1.30;
+        printf("el total a pagar es : \n %f",r);
+		    }
+	}
+	
+
+    return 0;
+}
