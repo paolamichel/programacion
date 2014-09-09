@@ -1,0 +1,24 @@
+/ valorabsoluto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int main()
+{
+	int a,b,c,d;
+	printf("introducir el 1er numero :\n");
+	scanf("%d",&a);
+    printf("introducir el 2do numero :\n");
+	scanf("%d",&b);
+    if (a>b)
+	{
+		c=a*a;
+		printf("el numero al cuadrado es :%d,\n",c);
+	}
+	else
+	{
+		d=b*b;
+		printf("el numero al cuadrado es :%d,\n",d);
+	}	
+	return 0;
+}
