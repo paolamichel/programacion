@@ -1,0 +1,16 @@
+// numer.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int a;
+	int k=1;
+	printf("\n ingrese el numero a: ");
+	scanf("%d",&a);
+     k=(a%10);
+	 printf("\n el segundo digito es: %d",k);
+	return 0;
+}
