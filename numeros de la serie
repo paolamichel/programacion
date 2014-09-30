@@ -1,0 +1,16 @@
+#include "stdafx.h"
+
+
+int main ()
+{
+	int n,x;
+	printf("digite el valor de n : ");
+	scanf("%d",&n);
+    for (int i=1; i<=n; i++)
+	{
+	  x=i*i;
+		  printf("%d\n",x);
+	
+	}
+	return 0;
+}
