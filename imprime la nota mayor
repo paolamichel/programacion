@@ -1,0 +1,24 @@
+#include "stdafx.h"
+
+
+int main()
+{
+	int n,nota;
+    int may=0;
+	printf("ingresar la cantidad de notas : \n ");
+	scanf("%d",&n);
+	for (int i=1; i<=n ; i++)
+	{
+		printf("ingresar la nota : \n ");
+		scanf("%d",&nota);
+		if (nota > may)
+		{
+		may=nota;
+		}
+		
+	}
+	printf("la nota mayor es : %d",may);
+
+	return 0;
+}
+
