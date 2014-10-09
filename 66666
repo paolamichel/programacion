@@ -1,0 +1,24 @@
+// forprogra.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int n,a;
+	int sum=0;
+	printf("ingrese la cantidad de numeros : \n ");
+	scanf("%i",&n);
+	for ( int i=1; i<=n ; i++)
+	{
+		printf("ingrese el numero : \n");
+		scanf("%i",&a);
+		if (a%2==0)
+		{
+		  sum=sum+a;
+		}
+	}
+    printf("la suma de los numeros divisibles entre dos es : %i \n",sum);
+}
+
