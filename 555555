@@ -1,0 +1,38 @@
+// prog10.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+
+int main (void)
+{
+	float n,sal,c;
+	printf("ingresar la cantidad de empleados : ");
+	scanf("%f",&n);
+	for (int i=1; i>=n ; i++);
+	{
+	printf("ingrese el salario : ");
+	scanf("%f",&sal);
+	if ( sal<800)
+	{
+	c=sal*0.20;
+	inc=sal+c
+		printf("el nuevo salario es :  %f \n",inc);
+	}
+	if ( sal>=800 && sal <=1500)
+	{
+	c=sal*0.10;
+	inc=sal+c
+		printf("el nuevo salario es :  %f \n",inc);
+	}
+	if ( sal>1500)
+	{
+	c=sal*0.05;
+	inc=sal+c
+		printf("el nuevo salario es :  %f \n",inc);
+	}
+
+	}
+
+	return 0;
+}
