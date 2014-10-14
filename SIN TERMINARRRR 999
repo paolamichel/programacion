@@ -1,0 +1,34 @@
+// progrfds.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int n;
+	char alum;
+	printf"ingresar la cantidad de alumnos :");
+	scanf("%d",&n);
+	while (i<=n)
+	{
+    printf"ingresar el nombre del alumno:");
+	scanf("%d",&alum);	
+	printf"ingresar la nota del trabajo realizado en laboratorio:");
+	scanf("%d",&n1);
+	printf"ingresar la 1 nota parcial :");
+	scanf("%d",&n2);
+    printf"ingresar la 2 nota parcial :");
+	scanf("%d",&n3);
+    printf"ingresar la 3 nota parcial :");
+	scanf("%d",&n4);
+    printf"ingresar la nota del examen final :");
+	scanf("%d",&n5);
+    
+	sumaparcial=n2+n3+n4;
+    promparcial=sumaparcial/3;
+	}
+    printf("%d
+	
+	return 0;
+}
