@@ -1,0 +1,19 @@
+// progrfds.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int n;
+	int mult=1;
+	printf("ingresar el numero : ");
+	scanf("%d",&n);
+	for (int i=1 ; i<=10 ; i++)
+	{
+		mult=n*i;
+		printf("%d \n",mult);
+    }
+	return 0;
+}
