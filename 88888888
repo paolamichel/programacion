@@ -1,0 +1,46 @@
+// progrfds.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int n,peso;
+	int x1=0;
+	int x2=0;
+	int x3=0;
+	int x4=0;
+	printf ( "ingresar la cantidad de niños : ");
+	scanf("%d",&n);
+	for (int i=1 ; i<=n ; i++)
+	{
+		printf("ingresar el peso del niño:");
+		scanf ("%d",&peso);
+
+		if (peso>0 && peso<10)
+		{
+		x1=x1+1;
+        }
+		if (peso>=10 && peso<20)
+		{
+		x2=x2+1;
+		}
+		if (peso>=20 && peso<30)
+		{
+		x3=x3+1;
+     	}
+		if (peso>=30)
+		{
+		x4=x4+1;
+		}
+
+	}
+
+    printf("entre 0 y 10 hay %d \n",x1);
+    printf("entre 10 y 20 hay %d \n",x2);
+    printf("entre 20 y 30 hay %d \n",x3);
+    printf("mas de 30 hay %d \n",x4);
+	
+	return 0;
+}
