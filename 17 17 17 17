@@ -1,0 +1,39 @@
+// progfd.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main ()
+{
+ int n,s;
+ float n1,n2,n3;
+ float prom=0;
+ char nom [25];
+ 
+ for (int i=1;i<=30;i++)
+	 {
+		 printf("ingresar el nombre del estudiante :");
+		 scanf("%s",&nom);
+		 printf("ingresar la nota1 :");
+		 scanf("%f",&n1);
+         printf("ingresar la nota2 :");
+		 scanf("%f",&n2);
+         printf("ingresar la nota3 :");
+		 scanf("%f",&n3);
+		 s=n1+n2+n3;
+		 prom=s/3;
+		 printf("el promedio del alumno es : %f \n ",prom);
+		 if (prom>50)
+		 {
+		 printf("el alumno si aprobo \n");
+		 }
+		 else 
+		 {
+		 printf("el alumno reprobo \n");
+		 }
+
+	 }
+	
+return 0;
+}
