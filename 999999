@@ -1,0 +1,40 @@
+/ progfd.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main ()
+{
+ float n,n1,n2,n3,n4,n5;
+ float sumaparcial=0;
+ float promparcial=0;
+ float sumatotal=0;
+ float promtotal=0;
+ char alum [20]  ;
+ printf("ingresar la cantidad de alumnos :");
+ scanf("%f",&n);
+ for(int i=1; i<=n; i++)
+ {
+  printf("ingresar el nombre del alumno:");
+  scanf("%s",&alum);
+  printf("ingresar la nota del trabajo realizado en laboratorio:");
+  scanf("%f",&n1);
+  printf("ingresar la 1 nota parcial :");
+  scanf("%f",&n2);
+  printf("ingresar la 2 nota parcial :");
+  scanf("%f",&n3);
+  printf("ingresar la 3 nota parcial :");
+  scanf("%f",&n4);
+  printf("ingresar la nota del examen final :");
+  scanf("%f",&n5);
+   sumaparcial=n2+n3+n4;
+   promparcial=sumaparcial/3;
+   sumatotal=n1+promparcial+n5;
+   promtotal=sumatotal/3;
+ printf("el nombre del alumno es %s \n",alum);
+ printf("su promedio total es %f \n",promtotal);
+ }
+	return 0;
+}
+
