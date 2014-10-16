@@ -1,0 +1,21 @@
+// progfd.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main ()
+{
+ int n;
+ float s=0;
+ float i;
+	 printf("hasta que numero quiere sumar :");
+     scanf("%d",&n);
+	 for(i=1;i<=n;i++)
+	 {
+      s= s +(1/i); 
+	 }
+	 printf("la suma es : %f \n ",s);
+  return 0;
+
+}
