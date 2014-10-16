@@ -1,0 +1,66 @@
+// progfd.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int main ()
+{
+ int n,A,B,p1A,p2B,p3,p4,p5,p6;
+ int f=1;
+ int e=1;
+ int c=1;
+ int b=1;
+ int a=1;
+ int d=1;
+ printf("ingresar la cantidad de encuestados : ");
+ scanf("%d",&n);
+ for(int i=1 ; i<=n;i++)
+ {
+	 printf("si opta por la aceptacion del producto marque 1 y si no marque 0");
+	 printf("producto A \n");
+	 scanf("%d",&A);
+	 printf("producto B \n");
+	 scanf("%d",&B);
+ if(A==1)
+ {
+ a=a+1;
+ }
+ if(B==1)
+ {
+ b=b+1;
+ }
+ if(A==0 && b==0)
+ {
+ c=c+1;
+ }
+ if(A==1 && b==1)
+ {
+ d=d+1;
+ }
+ if(A==0 && b==1)
+ {
+ f=f+1;
+ }
+ if(A==1 && b==0)
+ {
+ e=e+1;
+ }
+ p1A=(a*100)/n;
+ p2B=(b*100)/n;
+ p3=(d*100)/n;
+ p4=(c*100)/n;
+ p5=(e*100)/n;
+ p6=(f*100)/n;
+ }
+  printf("el total de encuestados es : %d \n",n);
+  printf("los que aceptaron el producto A son : %d \n",p1A);
+  printf("los que aceptaron el producto B son: %d \n",p2B);
+  printf("los que aceptaron los dos productos son : %d \n",p3);
+  printf("los que aceptaron el producto A pero no el B: %d \n",p5);
+  printf("los que aceptaron el producto B pero no el A : %d \n",p6);  
+  printf("los que no aceptaron ninugno de los dos productos: %d \n",p4);
+  
+  return 0;
+
+}
