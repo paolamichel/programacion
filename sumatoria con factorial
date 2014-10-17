@@ -1,0 +1,40 @@
+// nuevoprograma.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include "math.h"
+
+int main()//factorial 
+{
+	float n,x;
+	float s=0;
+	float f=1;
+	float i=1;
+	float b=1;
+	printf("ingresar el numero : ");
+	scanf("%d",&x);
+    printf("ingresar hasta que numero desea que sea la suma : ");
+	scanf("%d",&n);
+
+	while (i<=n)
+	{
+		if(b==1)
+		{
+		f=f*i;
+		s = s+ (pow(x,i)/f);
+		}
+		else 
+		{
+		f=f*i;
+		s = s-(pow(x,i)/f);
+		}
+		
+		b=b*(-1);
+		i=i+1;
+
+	}
+	
+	printf("la suma es %f \n :",s);
+	
+	return 0;
+}
