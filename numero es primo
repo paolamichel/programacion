@@ -1,0 +1,32 @@
+// nuevoprograma.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+
+int main()//programa como saber si un numero es primo 
+{
+	int n;
+	int c=0;
+	int i=1;
+	printf("ingresar el numero : ");
+	scanf("%d",&n);
+	while (i<=n)
+	{
+    if(n%i==0)
+	{
+		c=c+1;
+	}
+
+	i=i+1;
+	}
+	if(c==2)
+	{
+	printf("el numero es primo \n ");
+	}
+	else 
+	{
+	printf("el numero no es primo \n ");
+	}
+	return 0;
+}
