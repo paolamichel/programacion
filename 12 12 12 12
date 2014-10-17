@@ -1,0 +1,47 @@
+// nuevoprograma.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+
+int main()
+{
+	int n,ht,sh,ppf,ppm,totalm,totalh;
+	int pago=0;
+	char nom[30];
+    char sexo[15];
+	char femenino[15];
+	char masculino[15];
+	printf("ingresar la cantidad de empleados : ");
+	scanf("%d",&n);
+	for (int i=1;i<=n;i++)
+	{
+		printf("ingresar el nombre del empleado : ");
+		scanf("%s",&nom);
+		printf("ingresar el sexo /n :");
+		scanf("%s",&sexo);
+        printf("ingresar sus horas de trabajo /n : ");
+		scanf("%d",&ht);
+        printf("ingresar el sueldo por hora /n : ");
+		scanf("%d",&sh);
+		pago=ht*sh;
+        printf("el nombre del empleado es : %s /n",nom);
+        printf("su pago es : %d /n",pago);
+        if(sexo==femenino)
+		{
+		    ppf=ppf+pago;
+		}
+		if(sexo==masculino)
+		{
+			ppm=ppm+pago;
+		}
+	}
+	totalm=ppf/n;
+	totalh=ppm/n;
+	printf("el pago promedio para las mujeres es: %d",totalm);
+	printf("el pago promedio para los hombres es: %d",totalh);
+
+
+	return 0;
+}
+
