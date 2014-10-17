@@ -1,0 +1,24 @@
+// nuevoprograma.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+
+int main()//factorial 
+{
+	int n;
+	int f=1;
+	int i=1;
+	printf("ingresar el numero : ");
+	scanf("%d",&n);
+	while (i<=n)
+	{
+		f=f*i;
+		i=i+1;
+	}
+	
+	printf("el factorial es %d \n :",f);
+	
+	return 0;
+}
+
