@@ -1,0 +1,24 @@
+// funciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int factorial(int n)
+{
+int f=1;
+for(int i=1;i<=n;i++)
+f=f*i;
+return f;
+}
+int main()
+{
+	int n,x,c;
+	printf("leer el valor n :");
+	scanf("%d",&n);
+	printf("leer el valor x :");
+	scanf("%d",&x);
+	c=factorial(n)/(factorial(x)*factorial(n-x));
+	printf("el resultado es %d",c);
+	return 0;
+}
+
