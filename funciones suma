@@ -1,0 +1,23 @@
+// funciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int suma(int x,int y)
+{
+int s;
+s=x+y;
+return s;
+}
+int main()
+{
+	int a,b,c;
+	printf("leer el valor 1 :");
+	scanf("%d",&a);
+	printf("leer el valor 2 :");
+	scanf("%d",&b);
+	c=suma(a,b);
+	printf("la suma es %d",c);
+	return 0;
+}
+
