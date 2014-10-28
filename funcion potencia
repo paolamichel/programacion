@@ -1,0 +1,26 @@
+// funcion.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+
+int potencia(int x,int y)
+{
+	int p=1;
+	for(int i=1;i<=y;i++)
+	{
+	p=p*x;;
+	}
+	return p;
+}
+int main()
+{
+int n,may,men;
+printf("ingrese la canidad de numeros");
+scanf("%d",&n);
+may=potencia(10,n)-1;
+men=potencia(10,n-1);
+printf("el numero menor es: %d",men);
+printf("el numero mayor es: %d",may);
+return 0;
+}
