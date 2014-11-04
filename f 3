@@ -1,0 +1,26 @@
+// funcioneis.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int multi(int x,int y)
+{
+int a=0;
+for(int i=1;i<=y;i++)
+{
+	a=a+x;
+}
+	return a;
+}
+int main()
+{
+	int x,y,m;
+	printf("ingrese el 1er numero");
+	scanf("%d",&x);
+	printf("ingrese el 2do numero");
+	scanf("%d",&y);
+	m=multi(x,y);
+	printf("La multiplicacion es :%d \n ",m);
+
+	return 0;
+}
