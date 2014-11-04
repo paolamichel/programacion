@@ -1,0 +1,21 @@
+// funcioneis.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int cubo(int x);
+int main()
+{
+	int x,x2;
+	printf("ingrese el numero");
+	scanf("%d",&x);
+	x2=cubo(x);
+	printf("el cubo es : %d ",x2);
+	return 0;
+}
+int cubo(int x)
+{
+int a;
+a=x*x*x;
+return a;
+}
