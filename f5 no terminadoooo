@@ -1,0 +1,30 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+
+float distancia(int x1,int y1,int x2,int y2 )
+{
+    float d;
+	d=sqrt(pow(x2-x1,2)+ pow(y2-y1,2));
+	return(d);
+}
+
+int main()
+{
+	int x1,y1,x2,y2;
+	float D;
+	printf("ingresar el valor de x1 :");
+	scanf("%d",&x1);
+    printf("ingresar el valor de y1 :");
+	scanf("%d",&y1);
+    printf("ingresar el valor de x2 :");
+	scanf("%d",&x2);
+    printf("ingresar el valor de y2 :");
+	scanf("%d",&y2);
+	D=distancia(x1,y1,x2,y2);
+	printf("el numero con el signo cambiado es: %f",D);
+	return 0;
+}
+
