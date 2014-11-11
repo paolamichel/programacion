@@ -1,0 +1,19 @@
+// funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+float sig(float A)
+{
+return(A*(-1));
+}
+
+int main()
+{
+	float A,C;
+	printf("ingresar el valor de A :");
+	scanf("%f",&A);
+	C=sig(A);
+	printf("el numero con el signo cambiado es: %f",C);
+	return 0;
+}
+
