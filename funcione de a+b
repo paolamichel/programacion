@@ -1,0 +1,27 @@
+/* vector1.cpp : Defines the entry point for the console application.
+-------------------------------------------------------------------------------*/
+#include "stdafx.h"
+#include "conio.h"
+#include "stdio.h"
+
+#define N 5
+
+void main()
+{int v[N]={'\0'}, In[N]={'\0'},i,P;
+printf("\n\n ingrese %d de valores enteros:",N);
+for(i=0; i<N; i++)
+   {scanf("%d",&v[i]);
+   }
+ for(i=0; i<N; i++)
+   {printf("\n\n v[%d] = %d",i+1,v[i]);
+   }
+ P=0;
+ for(i=N-1; i>=0; i--)
+ {In[P] = v[i];
+  P=P+1;
+ }
+for(i=0; i<N; i++)
+ {printf("\n\n v[%d] = %d",i+1,In[i]);
+ }
+getch();
+}
