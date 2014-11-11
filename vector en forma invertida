@@ -1,0 +1,56 @@
+/* 
+2 funciones.cpp : Defines the entry point for the console application.
+*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdio.h"
+
+int leerA();
+void leerB(int *B);
+int Suma(int A, int B);
+void Resta(int *A, int *B, int *Res);
+
+void main()
+{int A,B,S,Res;
+A=leerA();
+leerB(&B);
+printf("\n A= %d   B=%d",A,B);
+S=Suma(A,B);
+printf("\n\n\n la suma de %d  +  %d = %d",A,B,S);
+Resta(&A,&B,&Res);
+if(A>B)
+ {printf("\n\n\n la Resta de %d  -  %d  = %d",A,B,Res);
+ }
+ else
+ {printf("\n\n\n la Resta de %d  -  %d  = %d",A,B,Res);
+ }
+getch();
+
+}
+int leerA()
+{int A;
+printf("\n ingrese el valor de A: ");
+scanf("%d",&A);
+return(A);
+}
+void leerB(int *B)
+{
+printf("\n ingrese el valor de B: ");
+scanf("%d",B);
+
+}
+int Suma(int A,  int B)
+{int S;
+S=0;
+S=A+B;
+return(S);
+}
+void Resta(int *A, int *B, int *Res)
+{if(*A>*B)
+  {*Res =*A - *B;
+  }
+  else
+  {*Res =*B - *A;
+  }
+}
