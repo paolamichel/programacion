@@ -1,0 +1,31 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+float decimal(int n)
+{
+	int i=0;
+	float r,resu=0,p=0;
+	float pot=0,b=2;
+	while(n>0)
+	{
+    r=n%10;
+	n=n/10;
+	pot = pow(b,i);
+	p=r*pot;
+    resu=resu+p;
+    i=i+1;
+	}
+return (resu);
+}
+
+int main()
+{
+int n;
+float x;
+printf("ingresar el numero :");
+scanf("%d",&n);
+x=decimal(n);
+printf("el numero en decimal es : %f",x);
+}
