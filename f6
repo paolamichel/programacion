@@ -1,0 +1,27 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+
+int potencia(int A,int B)
+{
+    int p=1;
+	for(int i=1;i<=B;i++)
+	{
+	p=p*A;
+	}
+	return(p);
+}
+
+int main()
+{
+	int n,P,A,B;
+	printf("ingresar el numero A :");
+	scanf("%d",&A);
+    printf("ingresar el numero B :");
+	scanf("%d",&B);
+	P=potencia(A,B);
+	printf("la potencia es : %d",P);
+	return 0;
+}
