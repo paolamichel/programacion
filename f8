@@ -1,0 +1,38 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+bool ascendente(int n)
+{
+int a=10,r;
+bool b=true;
+while(n>0)
+{
+ r=n%10;
+  if(r>a)
+   {
+    b=false;
+   }
+ a=r;
+ n=n/10;
+}
+return b;
+}
+
+int main()
+{
+	int n;
+	printf("eingrese un numero :");
+	scanf("%d",&n);
+	if(ascendente(n)==true)
+	{
+		printf("si esta ordenado ascendentemente");
+	}
+	else
+	{
+	    printf("no esta ordenado ascendentemente");
+	}
+	return 0;
+}
+   
