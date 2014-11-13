@@ -1,0 +1,36 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+bool esprimo(int n)
+{
+	int c=0,r;
+	for(int i=1;i<=n;i++)
+	{
+	r=n%i;
+	 if(r==0)
+	   c=c+1;
+	}
+    if(c==2)
+      return true;
+	else
+		return false;
+}
+
+int main()
+{
+	int n;
+	printf("ingresar el numero :");
+	scanf("%d",&n);
+	if (esprimo(n)==true)
+	{
+	printf("el numero es primo");
+	}
+	else
+	{
+    printf("el numero no es primo");
+	}
+	return 0;
+}
+   
