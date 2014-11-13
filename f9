@@ -1,0 +1,28 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+int mayor(int n)
+{
+	int m=-9,r;
+	while(n>0)
+	{
+    r=n%10;
+	if(r>m)
+	 {
+		m=r;
+	 }
+    n=n/10;
+	}
+
+return (m);
+}
+
+int main()
+{
+int n,x;
+printf("ingresar el numero :");
+scanf("%d",&n);
+x=mayor(n);
+printf("el numero mayor es : %d",x);
+}
