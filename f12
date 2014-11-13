@@ -1,0 +1,41 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h"
+float ecuaciony(float A,float B,float C,float D,float E ,float F,float x,float y)
+{
+	  y =(((A*F)/D)-C)/(B+E);
+	  return (y);
+	  
+}
+
+float ecuacionx(float A,float B,float C,float D,float E ,float F,float x,float y)
+{
+	  
+      x =(C-B*ecuaciony(A,B,C,D,E,F,x,y))/A;
+	  return (x);
+	  
+}
+
+int main()
+{
+float A,B,C,D,E,F;
+float x=0,y=0;
+printf("ingresar la constante A :");
+scanf("%f",&A);
+printf("ingresar la constante B :");
+scanf("%f",&B);
+printf("ingresar la constante C :");
+scanf("%f",&C);
+printf("ingresar la constante D :");
+scanf("%f",&D);
+printf("ingresar la constante E :");
+scanf("%f",&E);
+printf("ingresar la constante F :");
+scanf("%f",&F);
+x=ecuacionx(A,B,C,D,E,F,x,y);
+y=ecuaciony(A,B,C,D,E,F,x,y);
+printf(" x: %f",x);
+printf(" y: %f",y);
+}
