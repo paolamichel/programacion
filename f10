@@ -1,0 +1,24 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+int volcar(int n)
+{
+int r,nx=0;
+while(n>0)
+{
+ r=n%10;
+ n=n/10;
+ nx=nx*10+r;
+}
+return (nx);
+}
+
+int main()
+{
+int n,x;
+printf("ingresar el numero :");
+scanf("%d",&n);
+x=volcar(n);
+printf("el numero volcado es : %d",x);
+}
