@@ -1,0 +1,33 @@
+/ funcionesss.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+float factorial(int q)
+{
+ float f=1;
+    for(int i=1;i<=q;i++)
+	{
+	f=f*i;
+	}
+	return(f);
+}
+
+float formula(int n,int r)
+{
+	int x=1;  
+	x=(factorial(n))/(factorial(r)*factorial(n-r));
+	  return (x);
+	  
+}
+
+int main()
+{
+float n,r,fo;
+printf("ingresar n:");
+scanf("%f",&n);
+printf("ingresar r :");
+scanf("%f",&r);
+fo=formula(n,r);
+printf(" el resultado es: %f",fo);
+}
