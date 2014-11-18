@@ -1,0 +1,47 @@
+// vectores.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+int suma(int v[],int n)
+{
+ int x=0;		 
+  for(int i=0;i<n;i++)
+		 {
+		 x=x+v[i];
+		 }
+  return(x);
+}
+
+void cargar (int v[],int n)
+{
+  int x;
+  for(int i=0;i<n;i++)
+  {
+	  printf(" \n elemento:");
+	  scanf("%d",&x);
+   v[i]=x;
+  }
+}
+void mostrar(int v[],int n)
+{
+  for(int i=0;i<n;i++)
+  {
+	  printf("%d",v[i]);
+  }
+}
+int main()
+{
+	int v[50];
+	int n;
+	int x;
+	printf("\n introducir la dimension del vector");
+	scanf("%d",&n);
+    cargar(v,n);
+	mostrar(v,n); 
+	x=suma(v,n);
+	printf("la suma es : %d",x);
+	
+		return 0;
+}
+
