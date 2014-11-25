@@ -1,0 +1,64 @@
+// vectorrr.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+void cargar(int v[],int n)
+{
+int x;
+for(int i=0;i<n;i++)
+{
+	printf("\n elemento :");
+	scanf("%d",&x);
+	v[i]=x;
+}
+}
+
+
+
+void mostrar(int v[],int n)
+{
+for(int i=0;i<n;i++)
+{
+printf("%d", v[i]);
+}
+printf("\n");
+}
+
+
+
+
+void insertarPosicion(int v[],int &n,int x,int pos)
+{
+	if(pos<0 && pos>n)
+	{
+	printf("posicion no valida!!!");
+	}
+	else
+	{
+	int k=(n-1);
+     while(k>=pos)
+	 {
+	 v[k+1]=v[k];
+	 k--;
+	 }
+	v[pos]=x;
+	n=n+1;
+	}
+}
+int main()
+{
+	int v[50],n,x,pos;
+	printf(" \n ingresar la dimension del vector:");
+	scanf("%d",&n);
+	cargar(v,n);
+	mostrar(v,n);
+	printf("ingrese el elemento a insertar :");
+	scanf("%d",&x);
+    printf("ingrese la posicion :");
+	scanf("%d",&pos);
+    insertarPosicion(v,*n,x,pos);
+	mostrar(v,n);
+	return 0;
+}
+
