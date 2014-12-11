@@ -1,0 +1,75 @@
+/ vectores.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+void cargar(int v[],int n)
+{
+int x;
+for(int i=0;i<n;i++)
+{
+	printf("\n elemento :");
+	scanf("%d",&x);
+	v[i]=x;
+}
+}
+void mostrar(int v[],int n)
+{
+for(int i=0;i<n;i++)
+{
+printf("%d", v[i]);
+}
+printf("\n");
+}
+
+void invertir(int v[],int n)
+{
+	int j=(n-1);
+	int i=0;
+	int aux;
+	while(i<j)
+	{
+	aux=v[i];
+	v[i]=v[j];
+    v[j]=aux;
+	i++;
+	j--;
+	}
+}
+bool capicua(int v[],int n)
+    {
+		int j=(n-1);
+		int i=0;
+		int aux;
+		while(i<j)
+		 {	
+			if(v[i]==v[j])
+            {
+			}
+			else
+            {
+			return false;
+			}
+			i++;
+			j--;
+		}
+			return true;
+	}
+int main()
+{
+	int v[50],n;
+	printf(" \n ingresar la dimension del vector:");
+	scanf("%d",&n);
+	cargar(v,n);
+	mostrar(v,n);
+	invertir(v,n);
+	mostrar(v,n);
+	if(capicua(v,n)==true)
+		printf("el vector forma un numero capicua");
+	else
+		printf("el vector no forma un numero capicua");
+	
+	
+	
+	return 0;
+}
