@@ -1,0 +1,63 @@
+// vectores.cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+
+void cargar(int v[],int n)
+{
+int x;
+for(int i=0;i<n;i++)
+{
+	printf("\n elemento :");
+	scanf("%d",&x);
+	v[i]=x;
+}
+}
+void mostrar(int v[],int n)
+{
+for(int i=0;i<n;i++)
+{
+printf("%d", v[i]);
+}
+printf("\n");
+}
+
+int mayor(int v[],int n )
+{
+int may=-99999;
+for(int i=0;i<n;i++)
+{
+	if(v[i]>may)
+	{
+		may=v[i];
+	}
+}
+return may;
+}
+
+int menor(int v[],int n)
+{
+ int men=v[0];
+ for(int i=0;i<n;i++)
+{
+	if(v[i]<men)
+	{
+		men=v[i];
+	}
+}
+return men;
+}
+int main()
+{
+	int v[50],n,may,men;
+	printf(" \n ingresar la dimension del vector:");
+	scanf("%d",&n);
+	cargar(v,n);
+	mostrar(v,n);
+	may=mayor(v,n);
+	men=menor(v,n);
+	printf("el mayor es : %d",may);
+	printf("el menor es : %d",men);
+	return 0;
+
+}
