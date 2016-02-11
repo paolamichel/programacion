@@ -1,0 +1,17 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main(){
+	int a ,b,c=0;
+	cout<<"introducir numero : ";
+	cin>>a;
+	cout<<"introducir numero : ";
+	cin>>b;
+	while(a > 0){
+		a = a - b;
+		c++;
+	    }
+	cout <<"El resultado es :" << c;
+	getch();
+}
