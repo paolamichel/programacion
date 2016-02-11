@@ -1,0 +1,13 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main(){
+	char nombre[15];
+	cout<<"introducir nombre : ";
+	cin>> nombre;
+	cout<<"Bienvenido" << nombre << ", a VC++";
+	getch();
+}
+
+
