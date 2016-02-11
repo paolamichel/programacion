@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main(){
+	int a ,b;
+	cout<<"introducir numero : ";
+	cin>> a;
+	cout<<"introducir numero : ";
+	cin>> b;
+	if (a>b){
+	cout<<"el numero mayor es :"<< a;
+	}else
+	    {
+	cout<<"el numero mayor es :"<< b;
+	    }
+	if (a=b){
+	cout<<"los numeros son iguales"<< a;
+	}
+	getch();
+}
+
