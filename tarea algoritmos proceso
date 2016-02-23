@@ -1,0 +1,86 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int contardigitos(int n){
+	int c=0;
+	while(n>0){
+		n=n/10;
+		c++;
+	}
+	return(c);
+}
+int sumadigitos(int n){
+	int d,s=0;
+	while (n>0){
+		d=n%10;
+		s=s+d;
+		n=n/10;
+	}
+	return(s);
+}
+int sumaimpares(int n){
+	int s=0,d;
+	while (n>0){
+		d=n%10;
+		n=n/10;
+		if(d%2!=0){
+			s=s+d;
+		}
+	}
+	return(s);
+}
+int invertir(int n){
+	int r=0,d;
+	while(n>0){
+	d=n%10;
+	r=r*10+d;
+	n=n/10;
+	}
+	return(r);
+}
+bool primo(int n){
+	int i;
+	bool k=true;
+	for(i=2;i<n;i++){
+		if(n%i==0){
+			k=false;
+		}
+	}
+	return(k);
+}
+void main (){
+	int nro,r,opcion;
+	do{
+	cout<<"introducir un numero:";
+	cin>>nro;
+	if(nro<1){
+	cout<<"no se aceptan numeros negativos,vuelva a ingresar un numero >1";
+	}
+}while(nro<1);
+	do{
+		cout<<endl<<endl<<"****MENU****";
+		cout<<endl<<"1.- si es un numero primo o no";
+		cout<<endl<<"2.- sumar todos los digitos";
+		cout<<endl<<"3.- sumar los digitos impares";
+        cout<<endl<<"4.- invertir numero";
+		cout<<endl<<"0.- salir";
+		cout<<endl<<"seleccione opcion";
+		cin>>opcion;
+		switch(opcion){
+		case 1 : r=;
+	         cout<<"la cantidad de digitos es:"<<nro<<",es -->> :"<<r;
+		     break;
+	    case 2 : r=sumadigitos(nro);
+	         cout<<"la suma de digitos es:"<<nro<<",es -->> :"<<r;
+			 break;
+		case 3 : r=sumaimpares(nro);
+	         cout<<"la suma de digitos impares es:"<<nro<<",es -->> :"<<r;
+			 break;
+        case 4 : r=invertir(nro);
+	         cout<<"la suma de digitos impares es:"<<nro<<",es -->> :"<<r;
+			 break;
+		}
+
+	}
+	while(opcion!=0);
+}
