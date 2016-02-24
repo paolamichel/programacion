@@ -1,0 +1,86 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+bool numeroprimo(int n){
+	int i;
+	bool k=true;
+	for(i=2;i<n;i++){
+		if(n%i==0)
+			k=false;
+	}
+	return(k);
+}
+int invertir(int n){
+	int r=0,d;
+	while(n>0){
+	d=n%10;
+	r=r*10+d;
+	n=n/10;
+	}
+	return(r);
+}
+int eliminarimpar(int n){
+	int d,newnro=0;
+	while (n>0){
+		d=n%10;
+		if(d%2==0){
+			newnro=(newnro*10)+d;
+		}
+		n=n/10;
+	}
+	return(invertir(newnro));
+}
+bool digordenar(int n){
+	int digant=n%10;
+	int digact;
+	bool k=true;
+	n=n/10;
+	while(n>0){
+		digact=n%10;
+		if(digact>digant){
+			k=false;
+		}
+		digant=digact;
+		n=n/10;
+	}
+	return(k);
+}
+void main (){
+	int nro,r,opcion;
+	do{
+	cout<<"introducir un numero natural:";
+	cin>>nro;
+	if(nro<1){
+	cout<<"no se aceptan numeros negativos,vuelva a ingresar un numero >1";
+	}
+}while(nro<1);
+	do{
+		cout<<endl<<endl<<"****MENU****";
+		cout<<endl<<"1.- ¿Es un numero primo?";
+		cout<<endl<<"2.- invertir numero";
+		cout<<endl<<"3.- Eliminar los impares";
+        cout<<endl<<"4.- digitos ordenados";
+		cout<<endl<<"5.- numero Ordenado";
+		cout<<endl<<"0.- salir";
+		cout<<endl<<"seleccione opcion :";
+		cin>>opcion;
+		switch(opcion){
+		case 1 : if(numeroprimo(nro)==true)
+					 cout<<"El numero es primo"<<endl;
+				 else 
+					 cout<<"El numero no es primo"<<endl<<endl;
+	          break;
+	    case 2 : r=invertir(nro);
+	         cout<<"El numero invertido es:"<<nro<<" es -->> :"<<r;
+			 break;
+		case 3 : r=eliminarimpar(nro);
+	         cout<<"El numero es:"<<nro<<" es -->> :"<<r;
+			 break;
+        case 4 : r=digordenar(nro);
+			  cout<<"El numero es:"<<nro<<" es -->> :"<<r;
+			 break;
+		}
+
+	}
+	while(opcion!=0);
+}
