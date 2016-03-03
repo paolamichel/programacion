@@ -1,0 +1,39 @@
+#include<iostream>
+#include<conio.h> 
+int invertir(int a){
+	int i,c,s=1;
+	for(i=1;i<n;i++){
+		c=n%10;
+		s=(s*10)+(c*10);
+		n=n/10;
+	}
+	return(s);
+}
+
+int ascendente(int a){
+	int i,asc,c,r;
+	for(i=1;i<a;i++){
+	c=invertir(a);
+		c=a%10;
+		a=a/10;
+		r=a%10;
+		if(c>r){
+			asc=c;
+			asc=asc*10+r;
+		
+		}
+		
+	}
+	return(asc);
+}
+int algo(int a);
+
+void main(){
+	int a,b,res;
+	cout<<"ingrese el 1er numero: ";
+	cin>>a;
+	cout<<"ingrese el 2do numero: ";
+	cin>>b;
+	res=ascendente(a);
+  getch();
+}
