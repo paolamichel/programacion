@@ -1,0 +1,89 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+void cargarsegvector(int va[],int na,int vb[],int &nb)
+{
+	int i;
+	nb=0;
+	for(i=0;i<na;i++)
+	{
+		if(va[i] % 2 !=0)
+		{
+		vb[nb]=va[i];
+		nb++;
+		}
+	}
+}
+void cargar(int vec[],int n)
+{
+
+	for(int i=0;i<n;i++)
+	{
+	cout<<"introducir elemento vec["<<i<<"]: ";
+	cin>> vec[i];
+	}
+
+}
+void mostrar(int vec[],int n)
+{
+	cout<< "\nEl vector es --->> : \n";
+	for(int i=0;i<n;i++)
+	{
+	cout<< endl <<"vec["<<i<<"] = "<< vec[i];
+	}
+}
+int frecElem(int vec[],int n,int elem)
+{
+ int i,c=0;
+	for(i=0;i<n;i++)
+	{
+	   if(vec[i]==elem)
+	   {
+	    c++;
+	   }
+	}
+  return(c);
+}
+bool verifsiexiste(int vec[],int n,int elem)
+{
+int i;
+bool k=false;
+ for(i=0;i<n;i++)
+ {
+    if(vec[i]==elem)
+	{
+	k=true;
+	i=n;
+	}
+ }
+ return(k);
+}
+void copiarElemrepetidos(int va[],int na,int vb[],int &nb)
+{
+ int i;
+ nb=0;
+ for(i=0;i<na;i++)
+ {
+   if((frecElem(va,na,va[i]) > 1) && (verifsiexiste(vb,nb,va[i])==false))
+   {
+
+   vb[nb]=va[i];
+   nb++;
+   }
+ }
+}
+void main()
+{
+	int vec[20],n,vb[20],nb;
+	cout<<"cuantos elementos para el vector ? :";
+	cin>>n;
+	cargar(vec,n);
+	mostrar(vec,n);
+    copiarElemrepetidos(vec,n,vb,nb);
+	mostrar(vb,nb);
+
+	getch();
+	}
+
