@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+bool ordenados(int n)
+{
+int digact,digant;
+	bool k=false;
+	while(n>0)
+	{
+	digact=n%10;
+	n=n/10;
+	digant=n%10;
+	if(digact>digant)
+	{
+	k=true;
+	}
+	}
+	return(k);
+}
+void main()
+{
+	int n,c;
+    cout<< "ingrese el numero  ";
+	 cin>>n;
+	 c=ordenados(n);
+	 if(c==true)
+	 {
+	 cout<<"si esta ordenado ascendentemente";
+	 }
+	 if(c==false)
+	 {
+	 cout<<"no esta ordenado ascendentemente";
+	 }
+getch();
+}
+ 
+ 
