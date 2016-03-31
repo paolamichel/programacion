@@ -1,0 +1,62 @@
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+using namespace std;
+
+struct regAlumno{
+	char nomAlum[30];
+	char sexo;
+	int  nota;
+};
+
+struct regMateria{
+	char nomMat[30];
+	int  nroAlum;
+	regAlumno vecAlum[20];
+};
+
+struct regCarrera{
+	char nomCarr[30];
+	int  nroMat;
+	regMateria vecMat[20];
+};
+
+void cargar(regCarrera vec[], int n){
+	int i,k,q;
+	for(i=0;i<n;i++){	// carga las carreras
+		cout<<endl<<"Nombre de la carrera ? : ";
+		do{
+			gets(vec[i].nomCarr);
+		}while(strlen(vec[i].nomCarr) == 0); //valida que no entre vacio
+		cout << "Nro de materias de esta carrera ? : ";
+		cin >> vec[i].nroMat;
+		for(k=0;k<vec[i].nroMat;k++){	//carga la materias
+			cout<<endl<<"Nombre de la Materia ? : ";
+			do{
+				gets(vec[i].vecMat[k].nomMat);
+			}while(strlen(vec[i].vecMat[k].nomMat) == 0); //valida que no entre vacio
+			cout << "Nro de Alumnos de esta materia ? : ";
+			cin >> vec[i].vecMat[k].nroAlum;
+			for(q=0;q<vec[i].vecMat[k].nroAlum;q++){	//carga alumnos
+				cout<<endl<<"Nombre del alumno ? : ";
+				do{
+					gets(vec[i].vecMat[k].vecAlum[q].nomAlum);
+				}while(strlen(vec[i].vecMat[k].vecAlum[q].nomAlum) == 0); //valida que no entre vacio
+				cout << "Sexo <F/M> ? : ";
+				cin >> vec[i].vecMat[k].vecAlum[q].sexo;
+				cout << "Nota ? : ";
+				cin >> vec[i].vecMat[k].vecAlum[q].nota;
+			}
+		}
+	}
+}
+
+void main(){
+	regCarrera vecMiUniv[20];
+	int nroCarreras;
+	cout << "Cuantas carreras tiene la universidad ? : ";
+	cin >> nroCarreras;
+	cargar(vecMiUniv,nroCarreras);
+
+	getch();
+}
