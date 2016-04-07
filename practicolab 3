@@ -1,0 +1,77 @@
+#include<iostream>
+#include<conio.h>
+#include<string.h>
+using namespace std;
+
+struct regvecpalabras
+{
+	char vecp[15];
+};
+struct regvector
+{
+    regvecpalabras vec[10];
+};
+
+void cargarvec(regvecpalabras vec[],int n)
+{
+int i;
+for(i=0;i<n;i++)
+{
+cout<<"ingrese la palabra:";
+gets(vec[i].vecp);
+}
+}
+void mostrarvec(regvecpalabras vec[],int n)
+{
+int i;
+for(i=0;i<n;i++)
+{
+cout<<vec[i].vecp<<" " ;
+}
+}
+/*
+void cargar(regvector vec[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+	gets(vec[])
+	}
+}*/
+
+
+void palabras(regvecpalabras vec[],int np,regvector vec2[],int nv)
+{
+int i,j,;
+
+for(i=0;i<np;i++)
+{
+   for(j=0;j<nv;j++)
+   {
+	   
+	   if(i<j)
+		   {
+			   vec[i].vec2[j]
+	       }
+	   if(i>j)
+	   {
+	   vec[]=vec2[];
+	   }
+	   if(i==j)
+	   {
+	   vec[i]=vec2[j];
+	   }
+   }
+}
+}
+void main()
+{
+	int n;
+	regvecpalabras vec[10];
+cout<<"ingrese la cantidad de elementos del vector palabras :";
+cin>>n;
+cargarvec(vec,n);
+mostrarvec(vec,n);
+
+getch();
+}
